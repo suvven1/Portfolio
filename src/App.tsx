@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+import SideBar from './components/0.SideBar/SideBar';
+import AboutMe from './components/1.AboutMe/AboutMe';
+import Training from './components/2.Training/Training';
+import Awards from './components/3.Awards/Awards';
+import Project from './components/4.Project/Project';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <PortfolioPage>
+      <Contents>
+        <AboutMe />
+        <Training />
+        <Awards />
+        <Project />
+      </Contents>
+      <SideBar />
+    </PortfolioPage>
   );
 }
 
 export default App;
+
+const PortfolioPage = styled.div`
+  display: flex;
+  width: 100%;
+`
+
+const Contents = styled.div`
+  width: 80%;
+  padding: 20px;
+`
