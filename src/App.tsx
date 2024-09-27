@@ -28,6 +28,9 @@ const PortfolioPage = styled.div`
 `
 
 const Contents = styled.div`
+  display: flex;
+  flex-direction: column;
   width: 80%;
-  padding: 20px;
+  padding: 60px 0px 0px 50px;
+  gap: 50px;
 `

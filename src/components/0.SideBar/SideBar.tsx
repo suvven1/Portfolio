@@ -81,7 +81,3 @@ const ContentName = styled.div<{ isClicked: boolean }>`
     height: 70px;
     cursor: pointer;
 `
-
-const Hr = styled.hr`
-    border-color: #5478ad64;
-`
