@@ -44,7 +44,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://suvven1.github.io/cjs-portfolio/",
+  "homepage": "./",
   "devDependencies": {
     "gh-pages": "^6.1.1"
   }
